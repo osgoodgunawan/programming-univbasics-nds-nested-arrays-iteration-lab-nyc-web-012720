@@ -35,7 +35,10 @@ def total_even_pairs(src)
   count=0
   element_index=0
 while count<src.length do
-  if [count][element_index] %
+  if src[count][element_index] %2==0 && src[count][element_index+1]%2==0
+    total=src[count][element_index]+src[count][element_index+1]+total
+  end
+  count+=1
 end
-
+total
 end
